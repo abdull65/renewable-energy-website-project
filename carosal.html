@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
+  integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Carosal</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    #carosal {
+      background-color: #008000;
+      color: #fff;
+      width: 650px;
+      margin: 100px auto;
+      padding: 50px;
+      padding-left: 110px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 1rem;
+      font-weight: 400;
+      border-radius: 8px;
+      position: relative;
+    }
+
+    .img {
+      transform: scale(2.6);
+      border-radius: 8px;
+    }
+
+    .carosal-content {
+      display: flex;
+      align-items: center;
+      gap: 120px;
+    }
+
+    .carosal-typed-text {
+      font-weight: 400;
+      line-height: 1;
+    }
+
+    .name {
+      margin-top: 40px;
+      font-style: italic;
+    }
+
+    .icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #fff;
+      color: #008000;
+      width: 24px;
+      height: 24px;
+      position: absolute;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      border-radius: 50%;
+    }
+
+    .left-icon {
+      position: absolute;
+      left: -10px;
+    }
+
+    .right-icon {
+      position: absolute;
+      right: -10px;
+    }
+
+    .carousal-dots {
+      display: flex;
+      gap: 10px;
+      position: absolute;
+      bottom: -30px;
+      left: 400px;
+    }
+
+    .dot {
+      width: 10px;
+      height: 10px;
+      background-color: #fff;
+      border: #008000 2px solid;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    .first-dot {
+      background-color: #008000;
+    }
+  </style>
+</head>
+<body>
+  <div id="carosal">
+    <div class="carosal-content">
+      <div class="image">
+        <img src="img/testimonial-1.jpg" alt="carosal photo" class="img">
+      </div>
+      <div class="carosal-typed-text">
+        <quote>
+          <p>
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Unde numquam et dolore qui commodi minima officia ad eaque natus iusto!
+          </p>
+        </quote>
+        <p class="name">
+          Sarah willson
+        </p>
+      </div>
+      <i class="fas fa-angle-left icon left-icon"></i>
+      <i class="fas fa-angle-right icon right-icon"></i>
+    </div>
+    <div class="carousal-dots">
+    <div class="dot first-dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    </div>
+  </div>
+</body>
+</html>
