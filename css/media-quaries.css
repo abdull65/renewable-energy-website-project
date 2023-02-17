@@ -1,5 +1,4 @@
-@media (max-width: 600px) { html {
-    font-size: 10px;
+@media (max-width: 700px) { html { font-size: 10px;
   }
   #container {
     padding: 0 1rem;
@@ -8,10 +7,10 @@
   }
   .navbar { height: 4rem; padding-right: 2.4rem;
   }
-  .navbar ul, .navbar .quote-btn {
-    display: none;
+  .navbar ul, .navbar .quote-btn { display: none;
   }
-  .drop_down_box { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.5rem; cursor: pointer;
+  .drop_down_box { display: flex; flex-direction: column; align-items: center; 
+  justify-content: center; gap: 0.5rem; cursor: pointer;
   }
   .drop_down_btn { height: 0.3rem; width: 3rem; background-color: #32C36C;
   }
@@ -29,7 +28,8 @@
   .footer-content { padding: 0 2.4rem;
   }
 
-  .footer-text-card1 { grid-template-columns: 1fr 1fr; row-gap: 4rem; padding-top: 1rem;
+  .footer-text-card1 { grid-template-columns: 1fr 1fr; row-gap: 4rem; padding-top: 
+  1rem;
   }
 
   .footer-social-icon .social-icon { height: 2rem; width: 2rem;
@@ -38,8 +38,8 @@
   .project-photo { width: 40px; height: 100%; border-radius: 0;
   }
 
-  footer button[type="submit"] { padding: 3px;
-   margin: 0; border-top-left-radius: 0; border-bottom-left-radius: 0;
+  footer button[type="submit"] { padding: 3px; margin: 0; border-top-left-radius: 
+   0; border-bottom-left-radius: 0;
   }
 
   .footer-text-card2 { padding-left: 2.4rem; padding-right: 2.4rem;
@@ -52,7 +52,8 @@
   }
 
 
-  .section3-content { flex-direction: column-reverse; gap: 2rem; padding-bottom: 0;
+  .section3-content { flex-direction: column-reverse; gap: 2rem; padding-bottom: 
+  0;
   }
 
   .section3-img { width: 100%;
@@ -61,7 +62,8 @@
 .card1 .paragraph2 { font-size: 1.2rem;
 }
 
-.card1-list-items { align-items: baseline; font-size: 1.4rem; font-weight: 400; line-height: 1.5;
+.card1-list-items { align-items: baseline; font-size: 1.4rem; font-weight: 400; 
+line-height: 1.5;
 }
 
 .section4-content-row { flex-wrap: wrap; gap: 20px;
@@ -94,7 +96,8 @@
 .quote-section-typed-text { padding-left: 0; font-size: 1.4rem;
 }
 
-.testimonial-carousal { margin: 1rem; padding: 1rem 3rem; border-radius: 8px; position: relative;
+.testimonial-carousal { margin: 1rem; padding: 1rem 3rem; border-radius: 8px; 
+position: relative;
 }
 
 .carousal-content { flex-wrap: wrap; align-items: center; gap: 1rem;
@@ -103,7 +106,8 @@
 .contact-section-content { flex-wrap: wrap;
 }
 
-.carousal-content .img { margin-left: 15px; transform: scale(1); height: 5rem; border-radius: 50%;
+.carousal-content .img { margin-left: 15px; transform: scale(1); height: 5rem; 
+border-radius: 50%;
 }
 
 .testimonial-typed-text { padding-left: 1.4rem;
@@ -128,5 +132,19 @@
 
 
 }
-/******************* tab screen media query ************/ @media (min-width: 601px) and (max-width: 900px) { body { display: none;}
+/******************* tab screen media query ************/ @media (min-width: 
+ 701px) and (max-width: 950px) {
+body { display: block;
+}.top-bar {padding: 0 10px;}
+.address-section { width: 65%;}.address-section div:last-child { display: 
+none;}.social-icon .first { display: none;}.social-icon {gap:5px;}.social-link 
+{width: 30px;padding-left:0;} .navbar .logo { font-size: 1rem;font-weight: 
+600;width: 25%; padding-right:20px;}.navbar {padding: 0 0 0 10px;}.navbar ul 
+{margin-left:20px;} .navbar .nav-list .nav-link { font-size:.8rem;} .quote-btn { 
+font-size: 1rem; width:20%; justify-content: center; gap: 5px;padding: 0 
+10px;}.hero-section {padding-left: 20px;}.header {height: 30vh;}.header h1 
+{font-size: 2rem;}.form-header h1 {font-size:1.5rem;}.contact-section-content 
+{flex-direction: column;gap: 2;margin: 0;}.contact-form {margin: 0;} #subject 
+{width: 65%;} .footer-text-card1 {grid-template-columns: 1fr 1fr;row-gap: 
+2rem;margin: 0 2rem;}
 } 
