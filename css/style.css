@@ -111,8 +111,6 @@ li {
   width: 100%;
 }
 
-.first .icon-text {}
-
 .social-link .icon-text {
   color: var(--cl-secondary);
   padding: 0px 10px;
@@ -143,16 +141,22 @@ li {
 .navbar .logo {
   display: flex;
   align-items: center;
-  font-size: 1.2rem;
-  font-weight: 700;
+  width: 400px;
+  height: 100%;
   padding-right: 48px;
   border-right: 1px solid #dee2de;
+}
+
+.logo_img {
+  height: 100%;
+  width: 100%;
 }
 
 .nav_list_box {
   display: flex;
   align-items: center;
   margin-left: 250px;
+  margin-right: 2rem;
 }
 
 .nav-list {
@@ -178,6 +182,10 @@ li {
 }
 
 .drop_down_box {
+  display: flex;
+}
+
+.drop_down_btn {
   display: none;
 }
 
@@ -198,7 +206,7 @@ button:hover {
   text-align: center;
   gap: 10px;
   background-color: var(--cl-primary);
-  padding: 27px 50px;
+  padding: 27px 30px;
   font-size: 1.1rem;
   color: var(--cl-white);
   transition: background 200ms linear;
@@ -282,6 +290,10 @@ button:hover {
 .sub-title {
   color: var(--cl-white);
   margin-bottom: 1rem;
+}
+
+.footer-text-card1 .link {
+  color: var(--cl-text);
 }
 
 .column div {
@@ -397,11 +409,17 @@ button[type="submit"]:hover {
   padding: 20px 80px;
 }
 
+.footer-input {
+  color: #333 !important;
+  letter-spacing: 1px !important;
+}
+
 .footer-text-card2 .link {
   color: var(--cl-white);
   transition: all 200ms linear;
 }
 
+.footer-text-card2 .link:hover,
 .footer-text-card2 .link:hover {
   color: var(--primary);
 }
