@@ -4,11 +4,12 @@
   }
 
   #container {
-    padding: 0 1rem;
+    padding: 0;
   }
 
   header {
     position: fixed;
+    top: 0;
     width: 100%;
     z-index: 20000;
   }
@@ -43,15 +44,13 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 0.5rem;
     cursor: pointer;
   }
 
   .drop_down_btn {
     display: block;
-    height: 0.3rem;
-    width: 3rem;
-    background-color: #32C36C;
+    height: 2rem;
+    color: #32C36C;
   }
 
   .drop_down_box:hover .nav_list_box {
@@ -95,14 +94,19 @@
   }
 
   .footer-content {
-    padding: 0 2.4rem;
+    margin: 0;
+    padding: 0 1rem;
   }
 
   .footer-text-card1 {
-    grid-template-columns: 1fr 1fr;
-    row-gap: 4rem;
-    padding-top:
-      1rem;
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+    margin: 0;
+    padding-top: 1rem;
+  }
+
+  .second-column {
+    margin-left: 0;
   }
 
   .footer-social-icon .social-icon {
@@ -119,14 +123,13 @@
   footer button[type="submit"] {
     padding: 3px;
     margin: 0;
-    border-top-left-radius:
-      0;
+    border-top-left-radius: 0;
     border-bottom-left-radius: 0;
   }
 
   .footer-text-card2 {
-    padding-left: 2.4rem;
-    padding-right: 2.4rem;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .section2-content {
