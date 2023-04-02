@@ -33,8 +33,6 @@
     border-right: none;
   }
 
-  .logo_img {}
-
   .nav_list_box,
   .navbar .quote-btn {
     display: none;
@@ -418,3 +416,4 @@
       margin: 0 2rem;
     }
   }
+}

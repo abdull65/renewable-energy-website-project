@@ -226,8 +226,6 @@ button:hover {
   padding-left: 80px;
 }
 
-.hero-content {}
-
 .hero-content-text {
   margin-top: 20px;
 }
@@ -796,9 +794,9 @@ button[type="submit"]:hover {
   display: block;
 }
 
-.section1-card .read-more:hover {
-  /* box-shadow: inset -1px -1px 0px 0px #32C36C; */
-}
+/* .section1-card .read-more:hover {
+  box-shadow: inset -1px -1px 0px 0px #32C36C;
+} */
 
 .service-section2 {
   width: 100%;
