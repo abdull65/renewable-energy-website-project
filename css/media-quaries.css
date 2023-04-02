@@ -264,6 +264,10 @@
     position: relative;
   }
 
+  .form-content {
+    margin-bottom: 2rem;
+  }
+
   .form-grp {
     flex-direction: column;
   }
