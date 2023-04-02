@@ -5,6 +5,7 @@
 
   #container {
     padding: 0;
+    overflow: auto;
   }
 
   header {
@@ -49,7 +50,7 @@
 
   .drop_down_btn {
     display: block;
-    height: 2rem;
+    font-size: 2rem;
     color: #32C36C;
   }
 
@@ -112,6 +113,7 @@
   .footer-social-icon .social-icon {
     height: 2rem;
     width: 2rem;
+    margin-right: .8rem;
   }
 
   .project-photo {
@@ -142,12 +144,25 @@
     padding: 1rem;
   }
 
+  .section2-content .column h1 {
+    margin-bottom: 0;
+  }
+
+  .section2-content .column h1 .icon {
+    margin-right: .5rem;
+    padding: 10px;
+  }
 
   .section3-content {
     flex-direction: column-reverse;
     gap: 2rem;
     padding-bottom:
       0;
+  }
+
+  .section3-content .card1 {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
   }
 
   .section3-img {
@@ -165,6 +180,14 @@
     line-height: 1.5;
   }
 
+  .card1-list-icon {
+    margin-right: .5rem;
+  }
+
+  .section4-content {
+    margin-left: 1rem;
+  }
+
   .section4-content-row {
     flex-wrap: wrap;
     gap: 20px;
@@ -174,6 +197,11 @@
     grid-template-columns: 1fr;
     margin-left: 2rem;
     padding: 0;
+  }
+
+  .headings h1 {
+    font-size: 2rem;
+    text-align: left;
   }
 
   .service-section-icon {
@@ -190,6 +218,11 @@
   .service-section2-content {
     grid-template-columns: 1fr;
     padding-left: 0;
+  }
+
+  .card2-grp-content {
+    margin-right: 1rem;
+    margin-bottom: 1rem;
   }
 
   .projects-cards {
@@ -215,11 +248,24 @@
     font-size: 1.4rem;
   }
 
+  .form-section form {
+    grid-template-columns: 1fr;
+  }
+
+  #text {
+    grid-column: auto;
+  }
+
   .testimonial-carousal {
+    max-width: 300px;
     margin: 1rem;
-    padding: 1rem 3rem;
+    padding: 1rem 1rem;
     border-radius: 8px;
     position: relative;
+  }
+
+  .form-grp {
+    flex-direction: column;
   }
 
   .carousal-content {
@@ -230,6 +276,7 @@
 
   .contact-section-content {
     flex-wrap: wrap;
+    margin: 0;
   }
 
   .carousal-content .img {
@@ -261,7 +308,7 @@
   }
 
   .carousal-dots {
-    left: 35%;
+    left: 25%;
   }
 
   .carousal-dots .dot {
