@@ -282,12 +282,12 @@
 
   .form-content {
     margin-bottom: 2rem;
-    gap: 30px;
+    gap: 80px;
   }
 
   .form-grp {
     flex-direction: column;
-    gap: 30px;
+    gap: 80px;
   }
 
   .carousal-content {
