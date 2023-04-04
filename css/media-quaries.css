@@ -126,7 +126,8 @@
   }
 
   .third-column div {
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
     margin-right: 0;
   }
 
@@ -289,6 +290,10 @@
 
   .form-input {
     margin-top: 2rem;
+  }
+
+  .submit-btn {
+    margin-top: 1rem;
   }
 
   .carousal-content {
