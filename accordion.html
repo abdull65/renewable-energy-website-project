@@ -1,125 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
-  integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
-  crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <title>Accordion</title>
-  <style>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Accordion</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .accordion-content {
+        display: flex;
+        flex-direction: column;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 1rem;
+        font-weight: 400;
+        width: 650px;
+        margin: 10px auto;
+        padding: 20px 20px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      }
 
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-    .accordion-content {
-      display: flex;
-      flex-direction: column;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      font-size: 1rem;
-      font-weight: 400;
-      width: 650px;
-      margin: 10px auto;
-      padding: 20px 20px;
-      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    }
+      .icon {
+        color: #008000;
+      }
 
-    .icon {
-      color: #008000;
-    }
+      .accordion-heading {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 1.3rem;
+        font-weight: 500;
+      }
 
-    .accordion-heading {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      font-size: 1.3rem;
-      font-weight: 500;
-    }
+      .accordion-heading-text {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+      .accordion-body-text {
+        display: none;
+      }
+      .description {
+        padding: 20px 30px;
+        padding-left: 40px;
+      }
 
-    .accordion-heading-text {
-      display: flex;
-      align-items: center;
-      gap: 20px;
-    }
-
-    .second-accordion {
-      border-top: 4px solid #008000;
-    }
-
-    .second-accordion .accordion-heading {
-      color: #008000;
-    }
-
-    .description {
-      padding: 20px 30px;
-      padding-left: 40px;
-    }
-
-    ul {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding-right: 100px;
-      color: #d3d3d3;
-    }
-  </style>
-</head>
-<body>
-  <div id="accordion">
-    <div class="accordion-content">
-      <div class="accordion-heading">
-        <div class="accordion-heading-text">
-          <p>
-            01
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consect.
-          </p>
-        </div>
+      ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-right: 100px;
+        color: #d3d3d3;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="accordion">
+      <div class="accordion-content">
+        <div class="accordion-heading">
+          <div class="accordion-heading-text">
+            <p>01</p>
+            <p>Lorem ipsum dolor sit amet consect.</p>
+          </div>
           <i class="fas fa-angle-down icon"></i>
+        </div>
+        <div class="accordion-body-text">
+          <p class="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+            voluptate totam neque ullam veniam, sequi optio magnam omnis! Magni
+            in omnis, quod maxime nostrum velit.
+          </p>
+          <ul>
+            <li>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="accordion-content second-accordion">
+        <div class="accordion-heading">
+          <div class="accordion-heading-text">
+            <p>02</p>
+            <p>Lorem ipsum dolor sit amet consect.</p>
+          </div>
+          <i class="fas fa-angle-down icon"></i>
+        </div>
+        <div class="accordion-body-text">
+          <p class="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+            voluptate totam neque ullam veniam, sequi optio magnam omnis! Magni
+            in omnis, quod maxime nostrum velit.
+          </p>
+          <ul>
+            <li>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="accordion-content">
+        <div class="accordion-heading">
+          <div class="accordion-heading-text">
+            <p>03</p>
+            <p>Lorem ipsum dolor sit amet consect.</p>
+          </div>
+          <i class="fas fa-angle-down icon"></i>
+        </div>
+        <div class="accordion-body-text">
+          <p class="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+            voluptate totam neque ullam veniam, sequi optio magnam omnis! Magni
+            in omnis, quod maxime nostrum velit.
+          </p>
+          <ul>
+            <li>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.</li>
+          </ul>
+        </div>
       </div>
     </div>
-    <div class="accordion-content second-accordion">
-      <div class="accordion-heading">
-        <div class="accordion-heading-text">
-          <p>
-            02
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consect.
-          </p>
-        </div>
-          <i class="fas fa-angle-down icon"></i>
-      </div>
-      <div class="accordion-body-text">
-        <p class="description">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa voluptate totam neque ullam veniam,
-           sequi optio magnam omnis! Magni in omnis, quod maxime nostrum velit.
-        </p>
-        <ul>
-          <li>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.</li>
-          <li>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.</li>
-          <li>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.</li>
-          <li>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.</li>
-        </ul>
-      </div>
-    </div>
-    <div class="accordion-content">
-      <div class="accordion-heading">
-        <div class="accordion-heading-text">
-          <p>
-            03
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consect.
-          </p>
-        </div>
-          <i class="fas fa-angle-down icon"></i>
-      </div>
-    </div>
-  </div>
-</body>
+    <script>
+      let accordionBtn, accordionBodyText;
+      accordionBtn = document.querySelectorAll("fa-angle-down");
+      accordionBodyText = document.querySelectorAll(".accordion-body-text");
+      for (let i = 0; i < accordionBtn.length; i++) {
+        accordionBtn[i].addEventListener("click", activateAccordion());
+      }
+      function activateAccordion() {
+        for (let i = 0; i < accordionBodyText.length; i++) {
+          accordionBodyText[i].style.display = "block";
+        }
+      }
+    </script>
+  </body>
 </html>

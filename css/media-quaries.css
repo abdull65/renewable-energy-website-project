@@ -33,9 +33,29 @@
     border-right: none;
   }
 
-  .nav_list_box,
   .navbar .quote-btn {
     display: none;
+  }
+
+  .nav_list_box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #fff;
+    color: #32C36C;
+    width: 200px;
+    margin-right: 0;
+    padding-top: 1rem;
+    line-height: 5;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .6);
+    position: absolute;
+    top: 4rem;
+    right: -250px;
+    transition: 1s;
+  }
+
+  .nav-list {
+    width: 100%;
   }
 
   .drop_down_box {
@@ -53,33 +73,23 @@
   }
 
   .drop_down_box:hover .nav_list_box {
-    display: block;
-    background-color: #ffffff;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, .6);
-    color: #32C36C;
-    width: 200px;
-    padding-top: 1rem;
-    line-height: 3;
-    position: absolute;
-    top: 4rem;
     right: 0;
     z-index: 10200;
   }
 
   .navbar .nav-list .nav-link {
+    display: block;
     font-size: 1.4rem;
     width: 100%;
     padding: 0;
     padding-left: 1rem;
+    border-bottom: 1px solid #32C36C;
   }
 
   .navbar .nav-list .nav-link:hover {
     color: var(--primary);
-    border-bottom: 1px solid #32C36C;
-  }
+    padding-left: 2rem;
 
-  .nav-link.link.current {
-    border-bottom: none;
   }
 
   .hero-section {
@@ -113,6 +123,12 @@
     height: 2rem;
     width: 2rem;
     margin-right: .8rem;
+  }
+
+  .third-column div {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 0;
   }
 
   .project-photo {
@@ -177,6 +193,7 @@
     font-size: 1.4rem;
     font-weight: 400;
     line-height: 1.5;
+    margin-top: 1rem;
   }
 
   .card1-list-icon {
@@ -269,6 +286,7 @@
 
   .form-grp {
     flex-direction: column;
+    gap: 30px;
   }
 
   .carousal-content {
@@ -318,9 +336,10 @@
     width: 1rem;
     height: 1rem;
   }
+}
 
-  /******************* tab screen media query ************/
-  @media (min-width: 701px) and (max-width: 950px) {
+/******************* tab screen media query ************/
+/* @media (min-width: 701px) and (max-width: 950px) {
     body {
       display: block;
     }
@@ -415,5 +434,4 @@
         2rem;
       margin: 0 2rem;
     }
-  }
-}
+} */
