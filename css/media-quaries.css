@@ -126,8 +126,7 @@
   }
 
   .third-column div {
-    display: flex;
-    flex-wrap: wrap;
+    grid-template-columns: 1fr 1fr;
     margin-right: 0;
   }
 
@@ -282,12 +281,14 @@
 
   .form-content {
     margin-bottom: 2rem;
-    gap: 80px;
   }
 
   .form-grp {
     flex-direction: column;
-    gap: 80px;
+  }
+
+  .form-input {
+    margin-top: 2rem;
   }
 
   .carousal-content {
@@ -336,10 +337,6 @@
   .carousal-dots .dot {
     width: 1rem;
     height: 1rem;
-  }
-
-  map {
-    display: none;
   }
 }
 
