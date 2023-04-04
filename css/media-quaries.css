@@ -282,6 +282,7 @@
 
   .form-content {
     margin-bottom: 2rem;
+    gap: 30px;
   }
 
   .form-grp {
