@@ -128,8 +128,11 @@
   .third-column div {
     display: flex;
     flex-wrap: wrap;
-    gap: .5rem;
     margin-right: 0;
+  }
+
+  .third-column div img {
+    margin: 0 .5rem;
   }
 
   .project-photo {
