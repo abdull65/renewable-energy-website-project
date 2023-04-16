@@ -7,14 +7,12 @@
 // dateEl.textContent = localtime
 //  dateEl.textContent = hour + mins + secs;
 
-const readMoreBtn = document.querySelectorAll('.read-more');
-const hiddenContent = document.querySelectorAll('.service-typedtext');
-console.log(hiddenContent)
-function showContent() {
- if(hiddenContent.classList.contains('read-more')) {
-  hiddenContent.classList.remove('read-more')
- } else {
-  hiddenContent.classList.add('read-more')
- }
+function showText() {
+  const readMoreBtn = document.querySelectorAll(".read-more");
+  const text = document.querySelectorAll(".service-typedtext");
+  const hideText = text.substring(0, 50);
+  text.innerHTML = hideText;
+  for (let i = 0; i < readMoreBtn.length; i++) {
+    readMoreBtn[i].addEventListener("click", showText);
+  }
 }
-readMoreBtn.addEventListener('click', showContent())
