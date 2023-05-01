@@ -16,14 +16,15 @@
 </head>
 <body>
   <div id="container">
+    
     <header>
-      <section class="top-bar">
+      <div class="top-bar">
         <div class="address-section">
           <div>
             <small><span class=""><i class="fas fa-map-marker-alt icon"></i></span><span class="icon-text">123 Mandella street, Abuja, Nigeria.</span>
           </div>
           <div>
-            <span><i class="far fa-clock icon"></i></span><span class="icon-text">Mon-Fri: 09:00am-09:00pm</span></small>
+            <span><i class="far fa-clock icon"></i></span><span class="icon-text date_icon_text">Mon-Fri: 09:00am-09:00pm</span></small>
           </div>
         </div>
 
@@ -51,20 +52,14 @@
           target="_blank" class="social-link link"><i class="fab fa-linkedin"></i></a>
           </div>
         </div>
-      </section>
-      <nav class="navbar" style="top: 0px;">
+      </div>
+      <nav class="navbar">
         <div class="logo">
           <a href="#" class="logo-link link">
             <img src="./img/logo.png" alt="logo" class="logo_img">
           </a>
-          </div>
-        <div class="drop_down_box">
-          <div class="drop_down_bars">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-          </div>
-          <ul class="nav_list_box">
+        </div>
+        <ul class="nav_list_box">
           <li class="nav-list">
             <a href="index.html" class="nav-link link">HOME</a>
           </li>
@@ -84,13 +79,20 @@
         <button class="quote-btn btn">
           <span class="guote-btn-text icon-text">Get A Quote</span><span class="quote-btn-icon"><i class="fas fa-arrow-right"></i></span>
         </button>
-          </h1>
-          
+        </nav>
+      <div class="mobile_menu">
+        <div class="mobile_bar">
+          <div class="menu_bar">
+            <i title="menu" class="fa fa-bars"></i>
           </div>
-      </nav>
+          <div class="close_bar">
+            <i title="close" class="fa fa-times"></i>
+          </div>
+          </div>
+        </div>
     </header>
     <!--hero section-->
-    <section class="hero-section services-section header">
+    <section class="hero-section services-section header" id="hero_section">
       <h1>
         Services
       </h1>

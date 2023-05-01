@@ -1,18 +1,30 @@
-// now = new Date();
-// hour = now.getHours();
-// mins = now.getMinutes();
-// secs = now.getSeconds();
-// localtime = now.toString();
-// let dateEl = document.querySelector('.date_icon_text');
-// dateEl.textContent = localtime
-//  dateEl.textContent = hour + mins + secs;
+// mobile navigation
+const btnNavEl = document.querySelector(".mobile_menu");
+const headerEl = document.querySelector("header");
+console.log(btnNavEl, headerEl);
+btnNavEl.addEventListener("click", function () {
+  headerEl.classList.toggle("open_nav");
+});
+// Sticky navigation
+const indexSectionElEl = document.querySelector("#hero_section");
+const obs = new IntersectionObserver(
+  function (entries) {
+    const ent = entries[0];
+    console.log(ent);
 
-function showText() {
-  const readMoreBtn = document.querySelectorAll(".read-more");
-  const text = document.querySelectorAll(".service-typedtext");
-  const hideText = text.substring(0, 50);
-  text.innerHTML = hideText;
-  for (let i = 0; i < readMoreBtn.length; i++) {
-    readMoreBtn[i].addEventListener("click", showText);
+    if (ent.isIntersecting === false) {
+      document.body.classList.add("sticky");
+    }
+
+    if (ent.isIntersecting) {
+      document.body.classList.remove("sticky");
+    }
+  },
+  {
+    // In the viewport
+    root: null,
+    threshold: 0,
+    rootMargin: "-80px",
   }
-}
+);
+obs.observe(indexSectionElEl);

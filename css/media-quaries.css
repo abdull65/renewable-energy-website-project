@@ -8,117 +8,153 @@
     overflow: auto;
   }
 
+  /* style the header and navigation bar */
   header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 20000;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo {
+    width: 200px;
+    padding: 0;
+    border-right: 0;
+    z-index: 2;
+
   }
 
   .top-bar {
     display: none;
   }
 
+  .nav_list_box {
+    display: none;
+    padding-left: 2rem;
+  }
+
   .navbar {
-    height: 4rem;
-    padding-top: 1rem;
-    padding-right: 2.4rem;
-    position: relative;
+    padding: 0;
   }
 
-  .navbar .logo {
-    width: 200px;
-    margin-left: -4rem;
-    padding-right: 0;
-    border-right: none;
+  .open_nav .navbar {
+    background-color: rgba(255, 255, 255, .9);
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: 1rem;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* animation from this site --> https://easings.net/#easeInOutQuint */
+    transition: all 0.5s cubic-bezier(0.83, 0, 0.17, 1);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(5px);
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1;
   }
 
-  .navbar .quote-btn {
+  .open_nav .logo {
+    position: absolute;
+  }
+
+  .open_nav .logo {
+    left: 0;
+    top: -47%;
+  }
+
+  .open_nav .nav_list_box {
     display: none;
   }
 
+  .open_nav .nav_list_box {
+    display: block;
+    z-index: 2;
+  }
+
+  .open_nav .navbar {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0%);
+  }
+
   .nav_list_box {
-    display: flex;
     flex-direction: column;
     align-items: flex-start;
-    background-color: #fff;
-    color: #32C36C;
-    width: 300px;
-    height: 100vh;
-    margin-right: 0;
-    padding-top: 1rem;
-    line-height: 5;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, .6);
+    line-height: 3;
     position: absolute;
-    top: 8rem;
-    right: 500px;
-    transition: 1s;
+    left: -50%;
+    top: 4rem;
   }
 
-  .nav-list {
-    width: 100%;
+  .nav-link {
+    font-size: 2rem;
   }
 
-  .drop_down_bars {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    gap: 3px;
-  }
-
-  .drop_down_bars .bar {
-    background-color: #32C36C;
-    height: 3px;
-    width: 20px;
-    transition: 0.4s ease-in-out;
-  }
-
-  .drop_down_box:hover .nav_list_box {
-    right: 184px;
-    z-index: 10200;
-  }
-
-  .drop_down_box:hover .drop_down_bars .bar:nth-child(2) {
-    opacity: 0;
-    width: 0;
-  }
-
-  .drop_down_box:hover .drop_down_bars .bar:nth-child(1) {
-    transform-origin: left center;
-    transform: rotate(45deg);
-  }
-
-  .drop_down_box:hover .drop_down_bars .bar:nth-child(3) {
-    transform-origin: left center;
-    transform: rotate(-45deg);
-    margin-top: 2px;
-  }
-
-  .navbar .nav-list .nav-link {
-    display: block;
-    font-size: 1.4rem;
-    width: 100%;
-    padding: 0;
-    padding-left: 1rem;
-    border-bottom: 1px solid #32C36C;
-  }
-
-  .navbar .nav-list:last-child .nav-link {
+  .nav-link.link.current {
     border-bottom: none;
   }
 
-  .navbar .nav-list .nav-link:hover {
-    color: var(--primary);
-    padding-left: 2rem;
-
+  .mobile_menu {
+    display: block;
+    position: absolute;
+    right: 1rem;
   }
 
+  .mobile_bar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: .3rem;
+  }
+
+  .menu_bar,
+  .close_bar {
+    z-index: 1;
+  }
+
+  .mobile_bar .fa {
+    font-size: 26px;
+    color: #333;
+    z-index: 10200;
+  }
+
+  .close_bar {
+    display: none;
+  }
+
+  .open_nav .menu_bar {
+    display: none;
+  }
+
+  .open_nav .close_bar {
+    display: block;
+  }
+
+  .quote-btn {
+    font-size: 1.4rem;
+    position: absolute;
+    right: 2rem;
+    bottom: 20%;
+    padding: 0;
+    height: 50px;
+    width: 120px;
+    text-align: center;
+    gap: 0;
+    border-radius: 8px;
+    padding: 0 auto;
+  }
+
+  /* hero section */
   .hero-section {
     height: 100%;
     padding: 2.4rem;
-    margin-top: 8rem;
+    margin-top: 0rem;
   }
 
   .hero-content {
@@ -372,6 +408,14 @@
   }
 }
 
+/* STICKY NAVIGATION */
+.sticky header {
+  height: 40px;
+}
+
+.sticky .quote-btn {
+  display: none;
+}
 
 /******************* tab screen media query ************/
 /* @media (min-width: 701px) and (max-width: 950px) {
