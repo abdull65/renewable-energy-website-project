@@ -192,6 +192,7 @@
     display: flex;
     flex-wrap: wrap;
     margin-right: 0;
+    gap: 0;
   }
 
   .third-column div img {
