@@ -28,3 +28,13 @@ const obs = new IntersectionObserver(
   }
 );
 obs.observe(indexSectionElEl);
+
+// making service section text responsive
+const readMoreBtns = document.querySelectorAll(".service-typedtext_box");
+readMoreBtns.forEach((readMore) => {
+  readMore.addEventListener("click", function () {
+    readMore.classList.toggle("show-text");
+    const readMoreBtnEl = document.querySelector(".read-more");
+    readMoreBtnEl.textContent = "see less";
+  });
+});

@@ -411,15 +411,15 @@
     width: 1rem;
     height: 1rem;
   }
-}
 
-/* STICKY NAVIGATION */
-.sticky header {
-  height: 40px;
-}
+  /* STICKY NAVIGATION */
+  .sticky header {
+    height: 40px;
+  }
 
-.sticky .quote-btn {
-  display: none;
+  .sticky .quote-btn {
+    display: none;
+  }
 }
 
 /******************* tab screen media query ************/

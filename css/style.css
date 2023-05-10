@@ -708,7 +708,8 @@ button[type="submit"]:hover {
 .section1-content {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  align-items: center;
+  align-items: start;
+  row-gap: 1.8rem;
   margin: 2rem 4rem;
   padding: 2rem;
   padding-top: 0;
@@ -722,6 +723,7 @@ button[type="submit"]:hover {
   border-radius: 8px;
   box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
   position: relative;
+  overflow: hidden;
 }
 
 .section1-img {
@@ -731,7 +733,7 @@ button[type="submit"]:hover {
 }
 
 .service-section-icon {
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -748,24 +750,18 @@ button[type="submit"]:hover {
   left: 5%;
 }
 
-.section1-card-typed-text {
+/* .section1-card-typed-text {
   margin-top: 3rem;
-}
+} */
 
 .section1-card h1 {
   font-size: 1.5rem;
   color: var(--dark);
-  padding: 16px;
-  padding-bottom: 0;
-}
-
-.section1-card p {
-  padding: 16px;
-  padding-top: 10px;
+  padding: 5px 16px 0;
 }
 
 .section1-card .read-more {
-  display: inline-flex;
+  display: inline-block;
   align-items: center;
   background-color: #fff;
   border: none;
@@ -774,24 +770,36 @@ button[type="submit"]:hover {
   text-decoration: none;
   color: var(--cl-primary);
   margin: 20px;
-  /* s */
+  margin-bottom: 10px;
   padding-bottom: 0;
   padding-top: 0;
   cursor: pointer;
-  transition: color 200ms linear;
+}
+
+.section1-card .read-more::after {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 2px;
+  background-color: var(--cl-primary);
+  transition: width .4s;
+}
+
+.section1-card .read-more:hover::after {
+  width: 100%;
 }
 
 .service-typedtext {
-  display: none;
+  max-height: 0;
+  overflow: hidden;
+  transition: all .3s ease-in-out;
 }
 
-.service-typedtext.read-more {
-  display: block;
+.service-typedtext_box.show-text .service-typedtext {
+  max-height: 200px;
+  padding: 1rem;
+  padding-top: 0;
 }
-
-/* .section1-card .read-more:hover {
-  box-shadow: inset -1px -1px 0px 0px #32C36C;
-} */
 
 .service-section2 {
   width: 100%;
