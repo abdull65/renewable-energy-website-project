@@ -39,6 +39,7 @@ body {
   font-weight: 400;
   line-height: 1.5;
   position: relative;
+  transition: all 1s ease-in-out;
 }
 
 #container {
@@ -57,7 +58,6 @@ body {
 .icon-text {
   padding: 0px 10px;
 }
-
 
 .top-bar {
   display: flex;
@@ -756,7 +756,7 @@ button[type="submit"]:hover {
 
 .section1-card h1 {
   font-size: 1.5rem;
-  color: var(--dark);
+  color: var(--cl-primary);
   padding: 5px 16px 0;
 }
 
@@ -768,12 +768,14 @@ button[type="submit"]:hover {
   gap: 5px;
   font-weight: 400;
   text-decoration: none;
-  color: var(--cl-primary);
+  color: var(--cl-gray-dark);
   margin: 20px;
   margin-bottom: 10px;
   padding-bottom: 0;
   padding-top: 0;
   cursor: pointer;
+  transition: all .3ms ease-in;
+  animation: fadeIn 1s ease-in-out;
 }
 
 .section1-card .read-more::after {
@@ -792,13 +794,18 @@ button[type="submit"]:hover {
 .service-typedtext {
   max-height: 0;
   overflow: hidden;
-  transition: all .3s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .service-typedtext_box.show-text .service-typedtext {
   max-height: 200px;
   padding: 1rem;
   padding-top: 0;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.service-typedtext_box.show-text .read-more {
+  display: none;
 }
 
 .service-section2 {
@@ -1331,4 +1338,18 @@ form .submit-btn {
   background-color: rgba(255, 255, 255, 0.97);
   z-index: 9998;
   box-shadow: 0 1.2rem 3.2rem rgb(0, 0, 0, 1);
+  transition: all 1s ease-in-out;
+}
+
+/* adding animation to read more text */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 100%;
+    transform: translateY(0);
+  }
 }
