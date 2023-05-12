@@ -23,7 +23,7 @@ const obs = new IntersectionObserver(
   {
     // In the viewport
     root: null,
-    threshold: 1,
+    threshold: 0,
     rootMargin: "1px",
   }
 );
