@@ -6,7 +6,6 @@ btnNavEl.addEventListener("click", function () {
   headerEl.classList.toggle("open_nav");
 });
 // Sticky navigation
-const indexSectionElEl = document.querySelector("header");
 const heroSectionEl = document.querySelector(".hero-section");
 const obs = new IntersectionObserver(
   function (entries) {
@@ -26,11 +25,11 @@ const obs = new IntersectionObserver(
   {
     // In the viewport
     root: null,
-    threshold: 0,
-    rootMargin: "-80px",
+    threshold: 1,
+    rootMargin: "1px",
   }
 );
-obs.observe(indexSectionElEl);
+obs.observe(heroSectionEl);
 
 // making service section text responsive
 const readMoreBtns = document.querySelectorAll(".service-typedtext_box");
