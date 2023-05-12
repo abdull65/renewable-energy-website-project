@@ -14,12 +14,10 @@ const obs = new IntersectionObserver(
 
     if (ent.isIntersecting === false) {
       document.body.classList.add("sticky");
-      heroSectionEl.style.marginTop = "100px";
     }
 
     if (ent.isIntersecting) {
       document.body.classList.remove("sticky");
-      heroSectionEl.style.marginTop = "0";
     }
   },
   {
