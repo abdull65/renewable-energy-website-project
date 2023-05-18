@@ -283,7 +283,7 @@
     padding: 0;
   }
 
-  .headings h1 {
+  .heading h1 {
     font-size: 2rem;
     text-align: center;
   }
@@ -340,14 +340,6 @@
     grid-column: auto;
   }
 
-  .testimonial-carousal {
-    max-width: 300px;
-    margin: 1rem;
-    padding: 1rem 1rem;
-    border-radius: 8px;
-    position: relative;
-  }
-
   .form-content {
     margin-bottom: 2rem;
   }
@@ -364,52 +356,26 @@
     margin-top: 1rem;
   }
 
-  .carousal-content {
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 1rem;
-  }
-
-  .contact-section-content {
-    flex-wrap: wrap;
-    margin: 0;
-  }
-
-  .carousal-content .img {
-    margin-left: 15px;
-    transform: scale(1);
-    height: 5rem;
-    border-radius: 50%;
-  }
-
-  .testimonial-typed-text {
-    padding-left: 1.4rem;
+  .testimonial-section {
+    width: 100%;
   }
 
   .testimonial-name {
     padding-top: 1rem;
   }
 
-  .carousal-icons .icon {
-    height: 2.4rem;
-    width: 2.4rem;
+  .carousal-icons .fa-angle-left {
+    left: 20px;
   }
 
-  .carousal-icons .right {
-    right: -0.8rem;
+  .carousal-icons .fa-angle-right {
+    right: 20px;
   }
 
-  .carousal-icons .left {
-    left: -0.8rem;
-  }
-
-  .carousal-dots {
-    left: 25%;
-  }
-
-  .carousal-dots .dot {
-    width: 1rem;
-    height: 1rem;
+  input,
+  select,
+  textarea {
+    padding: 20px 5px;
   }
 
   /* STICKY NAVIGATION */

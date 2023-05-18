@@ -37,3 +37,36 @@ readMoreBtns.forEach((readMore) => {
     readMore.classList.toggle("show-text");
   });
 });
+
+// testimonial carousel
+const mainCarouselBox = document.querySelector(".testimonial-carousal");
+const prevCarouselBtn = document.querySelector(".fa-angle-left");
+const nextCarouselBtn = document.querySelector(".fa-angle-right");
+const currentSlideBox = document.querySelector(".carousel_slide_indicator_box");
+let sectionIndex = 0;
+prevCarouselBtn.addEventListener("click", () => {
+  sectionIndex = sectionIndex > 0 ? sectionIndex - 1 : 0;
+  mainCarouselBox.style.transform = `translate(${sectionIndex * -23.8}%)`;
+  document
+    .querySelector(".carousel_slide_indicator_box .current_slide")
+    .classList.remove("current_slide");
+  currentSlideBox.children[sectionIndex].classList.add("current_slide");
+});
+nextCarouselBtn.addEventListener("click", () => {
+  sectionIndex = sectionIndex < 3 ? sectionIndex + 1 : 3;
+  mainCarouselBox.style.transform = `translate(${sectionIndex * -23.8}%)`;
+  document
+    .querySelector(".carousel_slide_indicator_box .current_slide")
+    .classList.remove("current_slide");
+  currentSlideBox.children[sectionIndex].classList.add("current_slide");
+});
+document.querySelectorAll(".dot_indicator").forEach((currentSlide, ind) => {
+  currentSlide.addEventListener("click", () => {
+    sectionIndex = ind;
+    mainCarouselBox.style.transform = `translate(${sectionIndex * -23.8}%)`;
+    document
+      .querySelector(".carousel_slide_indicator_box .current_slide")
+      .classList.remove("current_slide");
+    currentSlideBox.children[sectionIndex].classList.add("current_slide");
+  });
+});

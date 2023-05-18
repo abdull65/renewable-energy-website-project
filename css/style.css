@@ -1,216 +1,233 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: border-box
 }
 
 :root {
-  --primary: #32C36C;
-  --light: #F6F7F8;
-  --dark: #1A2A36;
-  --cl-blue: #0d6efd;
-  --cl-indigo: #6610f2;
-  --cl-purple: #6f42c1;
-  --cl-pink: #d63384;
-  --cl-red: #dc3545;
-  --cl-orange: #fd7e14;
-  --cl-yellow: #ffc107;
-  --cl-green: #198754;
-  --cl-teal: #20c997;
-  --cl-cyan: #0dcaf0;
-  --cl-white: #fff;
-  --cl-gray: #6c757d;
-  --cl-gray-dark: #343a40;
   --cl-primary: #32C36C;
   --cl-secondary: #6c757d;
-  --cl-success: #198754;
+  --cl-light: #F6F7F8;
+  --dark: #1A2A36;
+  --cl-green: #198754;
+  --cl-white: #fff;
+  --cl-gray-dark: #343a40;
   --cl-info: #0dcaf0;
   --cl-warning: #ffc107;
   --cl-danger: #dc3545;
   --cl-text: #9b9b9b;
-  --cl-hover: #51cc82;
+  --cl-light-green: #51cc82
 }
 
 body {
   background-color: var(--cl-white);
   color: var(--cl-text);
-  font-family: 'roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: roboto, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
   position: relative;
-  transition: all 1s ease-in-out;
+  transition: 1s ease-in-out
 }
 
 #container {
   display: flex;
   flex-direction: column;
-  /* background-color: var(--dark); */
-  height: 100%;
+  height: 100%
+}
+
+.icon-text,
+.social-link .icon-text {
+  padding: 0 10px
+}
+
+.link,
+.navbar .nav-list .nav-link {
+  transition: .2s linear;
+  text-decoration: none
+}
+
+.quote-btn,
+.read-more-btn,
+.top-bar {
+  text-align: center
+}
+
+.card1 .paragraph1,
+.headings h1,
+.headings h4,
+.hero-content-text h1,
+.section4-content-heading h1,
+.testimonial-headings h4 {
+  text-transform: capitalize
+}
+
+.social-link,
+.top-bar {
+  align-items: center;
+  display: flex
 }
 
 .link {
-  color: var(--cl-primary);
-  text-decoration: none;
-  transition: all 200ms linear;
+  color: var(--cl-primary)
 }
 
-.icon-text {
-  padding: 0px 10px;
+.btn,
+.footer-social-icon .social-icon,
+.hero-content .read-more-btn,
+.quote-btn {
+  transition: background .2s linear
 }
 
 .top-bar {
-  display: flex;
-  align-items: center;
   justify-content: space-between;
-  text-align: center;
-  padding: 0px 20px;
+  padding: 0 20px;
   background: var(--dark);
   color: var(--cl-secondary);
-  height: 40px;
+  height: 40px
 }
 
+.nav-list,
 li {
-  list-style: none;
+  list-style: none
 }
 
+.footer-text-card2 .link:hover,
+.navbar .nav-list .nav-link:hover,
 .top-bar .icon {
-  color: var(--primary);
+  color: var(--cl-primary)
 }
 
+.social-link .icon,
+.social-link .icon-text {
+  color: var(--cl-secondary)
+}
+
+.section4-content-row,
 .social-icon {
   display: flex;
-  gap: 20px;
+  gap: 20px
 }
 
 .top-bar .social-link:hover {
-  color: var(--cl-green);
+  color: var(--cl-green)
 }
 
 .social-link {
-  display: flex;
-  align-items: center;
   justify-content: center;
   text-decoration: none;
   padding-left: 20px;
   border-left: 1px solid var(--cl-secondary);
   width: 38px;
-  height: 38px;
+  height: 38px
 }
 
 .social-link .social-icon-box {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center
 }
 
 .social-icon .first .social-link {
   display: flex;
   margin-right: 10px;
   border: none;
-  width: 100%;
+  width: 100%
 }
 
-.social-link .icon-text {
-  color: var(--cl-secondary);
-  padding: 0px 10px;
+.hero-content-text h1,
+.hero-content-text p,
+.quote-btn,
+.sub-title {
+  color: var(--cl-white)
 }
 
-.social-link .icon {
-  color: var(--cl-secondary);
-}
-
-.address-section {
+.address-section,
+.form-grp {
   display: flex;
-  gap: 10px;
+  gap: 10px
 }
 
 .navbar {
   display: flex;
-  /* align-items: center; */
   justify-content: space-between;
   background-color: var(--cl-white);
-  padding: 0 24px;
-  padding-right: 0px;
+  padding: 0 0 0 24px;
   width: 100%;
   height: 75px;
   position: static;
-  top: 50px;
+  top: 50px
+}
+
+.logo,
+.nav_list_box {
+  display: flex;
+  align-items: center
 }
 
 .logo {
-  display: flex;
-  align-items: center;
   width: 400px;
   height: 100%;
   padding-right: 48px;
-  border-right: 1px solid #dee2de;
+  border-right: 1px solid #dee2de
 }
 
 .logo_img {
   height: 100%;
-  width: 100%;
+  width: 100%
 }
 
 .nav_list_box {
-  display: flex;
-  align-items: center;
   margin-left: 250px;
-  margin-right: 2rem;
-}
-
-.nav-list {
-  list-style: none;
+  margin-right: 2rem
 }
 
 .navbar .nav-list .nav-link {
   display: block;
-  text-decoration: none;
   font-weight: 500;
   padding: 10px;
-  color: var(--dark);
-  transition: all 200ms linear;
-}
-
-.navbar .nav-list .nav-link:hover {
-  color: var(--primary);
+  color: var(--dark)
 }
 
 .nav-link.link.current {
-  color: var(--primary);
-  border-bottom: 2px solid var(--cl-primary);
+  color: var(--cl-primary);
+  border-bottom: 2px solid var(--cl-primary)
 }
 
 .btn {
   display: block;
   border: none;
-  cursor: pointer;
-  transition: background 200ms linear;
+  cursor: pointer
 }
 
-button:hover {
-  background-color: var(--cl-hover);
+.read-more-btn:hover,
+button:hover,
+button[type=submit]:hover {
+  background-color: var(--cl-light-green)
+}
+
+.hero-content .read-more-btn,
+.quote-btn,
+.section2-content .column h1 .icon,
+button[type=submit] {
+  background-color: var(--cl-primary)
 }
 
 .quote-btn {
   display: flex;
   align-items: center;
-  text-align: center;
   gap: 10px;
-  background-color: var(--cl-primary);
   padding: 27px 30px;
-  font-size: 1.1rem;
-  color: var(--cl-white);
-  transition: background 200ms linear;
+  font-size: 1.1rem
 }
 
-.mobile_menu {
-  display: none;
+.mobile_menu,
+.service-typedtext_box.show-text .read-more {
+  display: none
 }
 
 .hero-section {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../img/carousel-2.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/carousel-2.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -219,85 +236,92 @@ button:hover {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  padding-left: 80px;
+  padding-left: 80px
 }
 
 .hero-content-text {
-  margin-top: 20px;
+  margin-top: 20px
 }
 
 .hero-content-text h1 {
-  color: var(--cl-white);
-  text-transform: capitalize;
   font-size: 4.2rem;
   font-weight: 800;
   line-height: 1.1;
-  word-spacing: 0.5;
+  word-spacing: .5
+}
+
+.header .link,
+.header p {
+  word-spacing: 3px;
+  font-weight: 500
 }
 
 .hero-content-text p {
-  color: var(--cl-white);
   font-size: 1.2rem;
-  margin-top: 20px;
+  margin-top: 20px
 }
 
 .hero-content .read-more-btn {
   display: inline-block;
   text-decoration: none;
-  background-color: var(--cl-primary);
   color: var(--cl-white);
   font-weight: 500;
   margin-top: 40px;
   padding: 15px 50px;
-  border-radius: 50px;
-  transition: background 200ms linear;
-}
-
-.read-more-btn:hover {
-  background-color: var(--cl-hover);
+  border-radius: 50px
 }
 
 .footer-section {
   background: var(--dark);
   height: 100%;
-  margin-top: 3rem;
+  margin-top: 3rem
 }
 
 .footer-content {
   display: flex;
   flex-direction: column;
-  margin: 50px auto;
-  margin-bottom: 0px;
-  padding-bottom: 0px;
+  margin: 50px auto 0;
+  padding-bottom: 0
 }
 
 .footer-text-card1 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   align-items: start;
-  margin: 0px auto;
+  margin: 0 auto;
   padding-top: 3rem;
   padding-bottom: 3.5rem;
-  border-bottom: 1px solid var(--cl-text);
+  border-bottom: 1px solid var(--cl-text)
+}
+
+.section1-content,
+.third-column div {
+  grid-template-columns: repeat(3, 1fr)
 }
 
 .sub-title {
-  color: var(--cl-white);
-  margin-bottom: 1rem;
+  margin-bottom: 1rem
 }
 
 .footer-text-card1 .link {
-  color: var(--cl-text);
+  color: var(--cl-text)
 }
 
 .column div {
-  line-height: 2;
+  line-height: 2
+}
+
+.forth-column p,
+.header .link,
+.header p,
+.testimonial-headings {
+  line-height: 1.5
 }
 
 .footer-social-icon {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 8px
 }
 
 .footer-social-icon .social-icon {
@@ -305,49 +329,46 @@ button:hover {
   align-items: center;
   justify-content: center;
   margin-top: 10px;
-  padding: 8px;
+  padding: 10px;
   color: var(--cl-text);
   border: 1px solid var(--cl-text);
   height: 40px;
   width: 40px;
-  border-radius: 50%;
-  padding: 10px;
-  transition: background 200ms linear;
+  border-radius: 50%
 }
 
 .footer-social-icon .social-icon:hover {
   background-color: var(--cl-white);
-  color: var(--cl-hover);
+  color: var(--cl-light-green)
 }
 
-.first-column i {
-  color: var(--cl-primary);
+.card1 h4,
+.first-column i,
+.form-header h5,
+.nav-link.active {
+  color: var(--cl-primary)
 }
 
 .second-column {
-  margin-left: 1rem;
+  margin-left: 1rem
 }
 
-.second-column-nav-link,
-.second-column i {
+.second-column i,
+.second-column-nav-link {
   color: var(--cl-text);
   padding-left: 10px;
-  transition: all 200ms linear;
+  transition: .2s linear
 }
 
 .second-column-nav-link:hover {
   letter-spacing: 1px;
-  color: var(--cl-white);
-}
-
-.forth-column p {
-  line-height: 1.5;
+  color: var(--cl-white)
 }
 
 .input-section {
   display: flex;
   position: relative;
-  margin-top: 1rem;
+  margin-top: 1rem
 }
 
 .forth-column input {
@@ -357,122 +378,106 @@ button:hover {
   height: 50px;
   width: 100%;
   border-radius: 8px;
-  outline: none;
-  padding: 1rem 3rem 1rem 1.5rem;
+  outline: 0;
+  padding: 1rem 3rem 1rem 1.5rem
 }
 
-button[type="submit"] {
-  background-color: var(--cl-primary);
+button[type=submit] {
   color: var(--cl-white);
   font-size: 1.25rem;
   font-weight: 500;
   display: inline-block;
   position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  margin: 8px 8px 8px 0px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: 8px 8px 8px 0;
   padding: 5px 10px;
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  transition: all 200ms linear;
-}
-
-button[type="submit"]:hover {
-  background-color: var(--cl-hover);
+  transition: .2s linear
 }
 
 .third-column div {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
   gap: 10px;
-  margin-right: 50px;
+  margin-right: 50px
 }
 
 .project-photo {
   width: 50px;
   height: 100%;
-  border-radius: 10px;
+  border-radius: 10px
 }
 
 .footer-text-card2 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 80px;
+  padding: 20px 80px
 }
 
 .footer-input {
   color: #333 !important;
-  letter-spacing: 1px !important;
+  letter-spacing: 1px !important
 }
 
 .footer-text-card2 .link {
   color: var(--cl-white);
-  transition: all 200ms linear;
-}
-
-.footer-text-card2 .link:hover,
-.footer-text-card2 .link:hover {
-  color: var(--primary);
+  transition: .2s linear
 }
 
 .header {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../img/carousel-1.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)) center/cover no-repeat, url(../img/carousel-1.jpg) center/cover no-repeat;
   height: 50vh;
-  color: var(--cl-white);
+  color: var(--cl-white)
 }
 
 .header h1 {
-  font-size: 4.4rem;
+  font-size: 4.4rem
+}
+
+.card1 .paragraph1,
+.section2-content .column h1,
+.section4-content-heading h1 {
+  font-size: 2.5rem;
+  color: var(--dark);
+  color: var(--dark)
 }
 
 .header p {
-  font-weight: 500;
-  line-height: 1.5;
-  word-spacing: 3px;
-  letter-spacing: 1px;
+  letter-spacing: 1px
 }
 
 .header .link {
   color: zc var(--cl-white);
-  font-weight: 500;
-  line-height: 1.5;
-  word-spacing: 3px;
-  letter-spacing: 2;
+  letter-spacing: 2
 }
 
 .section2 {
   background-color: var(--cl-white);
-  color: var(--cl-gray);
+  color: var(--cl-secondary)
 }
 
 .section2-content {
   display: flex;
   justify-content: space-around;
-  margin: 50px;
-  /* gap: 30px; */
+  margin: 50px
 }
 
 .section2-content .column {
   display: flex;
   flex-direction: column;
-  padding: 40px 20px;
+  padding: 40px 20px
 }
 
 .section2-content .column h1 {
   display: flex;
   align-items: center;
   gap: 16px;
-  font-size: 2.5rem;
-  font-weight: bolder;
-  color: var(--dark);
-  margin-bottom: 1rem;
+  font-weight: 700;
+  margin-bottom: 1rem
 }
 
 .section2-content .column h1 .icon {
@@ -480,95 +485,86 @@ button[type="submit"]:hover {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-color: var(--cl-primary);
   color: var(--cl-white);
   font-size: 16px;
   height: 50px;
   width: 50px;
   border-radius: 50%;
-  padding: 15px;
-}
-
-.section2-content .column h1 {
-  color: var(--dark);
-  font-weight: 700;
-  margin-bottom: 1rem;
+  padding: 15px
 }
 
 .section3 {
-  background-color: var(--light);
+  background-color: var(--light)
+}
+
+.card1-list-icon,
+.read-more-btn,
+.section1-card .read-more::after,
+.typed-text-card2 .card2-grp i {
+  background-color: var(--cl-primary)
 }
 
 .section3-content {
-  display: flex;
+  display: flex
 }
 
+.quote-img,
 .section3-img {
-  width: 50%;
+  width: 50%
 }
 
 .section3-content .card1 {
   display: flex;
   flex-direction: column;
   margin-top: 80px;
-  margin-left: 40px;
-}
-
-.card1 h4 {
-  color: var(--cl-primary);
+  margin-left: 40px
 }
 
 .card1 .paragraph1 {
-  color: var(--dark);
-  font-size: 2.5rem;
-  text-transform: capitalize;
   line-height: 1.1;
-  word-spacing: 0px;
-  margin-bottom: 2rem;
+  word-spacing: 0;
+  margin-bottom: 2rem
 }
 
-.card1 .paragraph2 {
-  margin-bottom: 1rem;
-}
-
+.card1 .paragraph2,
 .card1 ul {
-  margin-bottom: 1rem;
+  margin-bottom: 1rem
 }
 
 .card1-list-items {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 10px
 }
 
 .card1-list-icon {
-  background-color: var(--cl-primary);
   color: var(--cl-white);
   font-size: 8px;
   padding: 4px;
-  border-radius: 50%;
+  border-radius: 50%
 }
 
 .read-more-btn {
   text-decoration: none;
   display: inline-block;
-  background-color: var(--cl-primary);
   color: var(--cl-white);
   font-size: 1.125rem;
   font-weight: 500;
-  text-align: center;
   margin-top: 1rem;
   padding: 12px 20px;
   width: 200px;
   border-radius: 25px;
-  transition: background 200ms linear;
+  transition: background .2s linear
+}
+
+.section4,
+.service-section {
+  color: var(--cl-text);
+  background-color: var(--cl-white)
 }
 
 .section4 {
-  background-color: var(--cl-white);
-  color: var(--cl-text);
-  margin: 0px;
-  padding: 3rem 0px;
+  margin: 0
 }
 
 .section4-content {
@@ -577,7 +573,7 @@ button[type="submit"]:hover {
   align-items: center;
   justify-content: center;
   margin: auto;
-  max-width: 960px;
+  max-width: 960px
 }
 
 .section4-content-heading {
@@ -585,40 +581,33 @@ button[type="submit"]:hover {
   flex-direction: column;
   align-items: center;
   line-height: 1.5;
-  margin: 1rem 0px;
-  padding: 1rem 0px;
-}
-
-.section4-content-heading h1 {
-  color: var(--dark);
-  font-size: 2.5rem;
-  text-transform: capitalize;
+  margin: 1rem 0;
+  padding: 1rem 0
 }
 
 .section4-content-heading h4 {
   color: var(--cl-primary);
   font-size: 1rem;
   font-weight: 500;
-  text-transform: capitalize;
+  text-transform: capitalize
 }
 
-.section4-content-row {
-  display: flex;
-  gap: 20px;
+.heading h1,
+.service-section-icon {
+  font-size: 2.5rem;
+  text-align: center
 }
 
 .row-item-img {
   width: 100%;
   border-top-right-radius: 50px;
-  border-top-left-radius: 10px;
+  border-top-left-radius: 10px
 }
 
 .row-item {
   display: flex;
-  box-shadow: 0px 20px 30px 0 rgba(0, 0, 0, 0.1);
-  padding: 10px;
-  padding-left: 0;
-  padding-top: 0;
+  box-shadow: 0 20px 30px 0 rgba(0, 0, 0, .1);
+  padding: 0 10px 10px 0
 }
 
 .row-item .grp2 {
@@ -626,20 +615,20 @@ button[type="submit"]:hover {
   flex-direction: column;
   align-items: flex-start;
   line-height: 1.3;
-  margin: 10px auto;
-  /*padding-left: 20px;*/
+  margin: 10px auto
 }
 
 .row-item .grp2 h1 {
   font-size: 1.2rem;
-  font-weight: 600;
+  font-weight: 600
 }
 
+.service-content,
 .social-icon-link {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: center
 }
 
 .social-icon-link .social-link {
@@ -651,68 +640,47 @@ button[type="submit"]:hover {
   color: var(--cl-primary);
   border-radius: 50%;
   padding: 15px;
-  margin: 5px auto;
-  margin-left: 15px;
-  transition: background 200ms linear;
+  margin: 5px auto 5px 15px;
+  transition: background .2s linear
 }
 
 .social-icon-link .social-link:hover {
   background-color: var(--cl-primary);
-  color: var(--cl-white);
+  color: var(--cl-white)
 }
-
-/* services section */
 
 .service-section {
-  background-color: var(--cl-white);
-  color: var(--cl-text);
-  margin: 0rem auto;
+  margin: 0 auto;
   padding: 3rem auto;
   width: 100%;
-  height: 100%;
+  height: 100%
 }
 
-/* .section1 {
-} */
-
-.service-content {
+.service-content .heading {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  margin: 3rem auto 0;
+  padding: 2rem auto
 }
 
-.service-content .headings {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 3rem auto;
-  margin-bottom: 0;
-  padding: 2rem auto;
+.heading h1 {
+  color: var(--dark)
 }
 
-.headings h1 {
-  text-transform: capitalize;
-  font-size: 2.5rem;
-  color: var(--dark);
-  text-align: center;
-}
-
-.headings h4 {
-  text-transform: capitalize;
+.heading h4 {
   font-weight: 500;
   color: var(--cl-primary);
   text-align: center;
+  margin-top: 2rem;
 }
 
 .section1-content {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
   align-items: start;
   row-gap: 1.8rem;
   margin: 2rem 4rem;
-  padding: 2rem;
-  padding-top: 0;
+  padding: 0 2rem 2rem
 }
 
 .section1-card {
@@ -721,43 +689,37 @@ button[type="submit"]:hover {
   margin: 10px;
   padding: 0;
   border-radius: 8px;
-  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, .1);
   position: relative;
-  overflow: hidden;
+  overflow: hidden
 }
 
 .section1-img {
   width: 100%;
   border-top-right-radius: 8px;
-  border-top-left-radius: 8px;
+  border-top-left-radius: 8px
 }
 
 .service-section-icon {
   display: none;
   align-items: center;
   justify-content: center;
-  text-align: center;
   background-color: var(--cl-white);
   color: var(--cl-primary);
   width: 80px;
   height: 80px;
-  font-size: 2.5rem;
   padding: 20px;
   border-radius: 50%;
-  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, .1);
   position: absolute;
   bottom: 25%;
-  left: 5%;
+  left: 5%
 }
-
-/* .section1-card-typed-text {
-  margin-top: 3rem;
-} */
 
 .section1-card h1 {
   font-size: 1.5rem;
   color: var(--cl-primary);
-  padding: 5px 16px 0;
+  padding: 5px 16px 0
 }
 
 .section1-card .read-more {
@@ -769,71 +731,72 @@ button[type="submit"]:hover {
   font-weight: 400;
   text-decoration: none;
   color: var(--cl-gray-dark);
-  margin: 20px;
-  margin-bottom: 10px;
+  margin: 20px 20px 10px;
   padding-bottom: 0;
   padding-top: 0;
   cursor: pointer;
-  transition: all .3ms ease-in;
-  animation: fadeIn 1s ease-in-out;
+  transition: .3ms ease-in;
+  animation: 1s ease-in-out fadeIn
 }
 
 .section1-card .read-more::after {
   content: "";
   display: block;
-  width: 0px;
+  width: 0;
   height: 2px;
-  background-color: var(--cl-primary);
-  transition: width .4s;
+  transition: width .4s
 }
 
-.section1-card .read-more:hover::after {
-  width: 100%;
+#subject,
+.section1-card .read-more:hover::after,
+.section2-img,
+.section2-img img {
+  width: 100%
 }
 
 .service-typedtext {
   max-height: 0;
   overflow: hidden;
-  transition: all 1s ease-in-out;
+  transition: 1s ease-in-out
 }
 
 .service-typedtext_box.show-text .service-typedtext {
   max-height: 200px;
-  padding: 1rem;
-  padding-top: 0;
-  animation: fadeIn 1.5s ease-in-out;
-}
-
-.service-typedtext_box.show-text .read-more {
-  display: none;
+  padding: 0 1rem 1rem;
+  animation: 1.5s ease-in-out fadeIn
 }
 
 .service-section2 {
   width: 100%;
   height: 100%;
-  padding: 2rem 0;
-  padding-left: 4rem;
+  padding: 2rem 0 2rem 4rem
 }
 
 .service-section2-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding-left: 2rem;
-  gap: 20px;
+  gap: 20px
 }
 
 .service-section2-content .headings {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding-bottom: 2rem;
+  padding-bottom: 2rem
+}
+
+.card2-grp-content p,
+.typed-text-card2 .card2-grp {
+  flex-direction: column;
+  display: flex
 }
 
 .service-section2-content .headings h1 {
   color: var(--dark);
   font-weight: 700;
   line-height: 1.2;
-  word-spacing: 1px;
+  word-spacing: 1px
 }
 
 .service-section2-content .headings h5 {
@@ -841,92 +804,77 @@ button[type="submit"]:hover {
   font-weight: 700;
   line-height: 1.2;
   word-spacing: 1px;
-  margin-left: 10px;
+  margin-left: 10px
 }
 
 .typed-text-card1 {
   margin-right: 2rem;
   padding-right: 5rem;
-}
-
-.typed-text-card1 {
-  font-weight: 500;
+  font-weight: 500
 }
 
 .typed-text-card2 {
   display: flex;
   margin-top: 2rem;
-  gap: 4rem;
+  gap: 4rem
 }
 
 .typed-text-card2 .card2-grp {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
+  gap: 2rem
 }
 
-.card2-grp-content {
+.card2-grp-content,
+.carousal-icons {
   display: flex;
-  align-items: center;
+  align-items: center
 }
 
 .typed-text-card2 .card2-grp i {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--cl-primary);
   color: var(--cl-white);
   width: 50px;
   height: 50px;
   margin-right: 1rem;
   padding: 20px;
-  border-radius: 50%;
-}
-
-.card2-grp-content p {
-  display: flex;
-  flex-direction: column;
+  border-radius: 50%
 }
 
 .light-col {
   font-weight: 500;
-  color: var(--cl-text);
+  color: var(--cl-text)
+}
+
+.dark-col,
+.project-card p {
+  color: var(--dark);
+  font-size: 1.2rem
 }
 
 .dark-col {
-  font-size: 1.2rem;
-  font-weight: 700;
-  color: var(--dark);
-}
-
-.section2-img {
-  width: 100%;
-}
-
-.section2-img img {
-  width: 100%;
+  font-weight: 700
 }
 
 .project-content {
   background-color: var(--cl-white);
   color: var(--cl-text);
-  margin: 0px auto;
-  padding: 3rem auto;
-  padding-top: 4rem;
+  margin: 0 auto;
+  padding: 4rem auto 3rem;
   width: 100%;
-  height: 100%;
+  height: 100%
 }
 
 .project-content-heading {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center
 }
 
 .project-content-heading .headings h1 {
-  margin-top: 0.5rem;
+  margin-top: .5rem;
   line-height: 1.1;
-  word-spacing: 0.5px;
+  word-spacing: .5px
 }
 
 .project-content-links ul {
@@ -934,162 +882,166 @@ button[type="submit"]:hover {
   align-items: center;
   justify-content: center;
   gap: 20px;
-  margin: 2rem auto;
-  margin-top: 1rem;
-  padding: 1rem;
+  margin: 1rem auto 2rem;
+  padding: 1rem
 }
-
-/* .project-list-link {
-  
-} */
 
 .project-link {
   color: var(--cl-gray-dark);
   font-weight: 500;
   padding: 3px;
-  transition: all 200ms linear;
+  transition: .2s linear
 }
 
 .project-link:hover {
   color: var(--cl-primary);
-  border-bottom: 2px solid var(--cl-primary);
+  border-bottom: 2px solid var(--cl-primary)
 }
 
 .projects-details {
   display: flex;
   flex-direction: column;
   background-color: var(--cl-white);
-  padding: 2rem;
-  padding-top: 0;
+  padding: 0 2rem 2rem;
   width: 100%;
-  height: 100%;
+  height: 100%
+}
+
+.projects-cards,
+form {
+  display: grid;
+  gap: 20px
 }
 
 .projects-cards {
-  display: grid;
   grid-template-columns: repeat(3, 1fr);
-  margin: 0 4rem;
-  gap: 20px;
+  margin: 0 4rem
 }
 
 .project-img {
   width: 100%;
   border-radius: 10px;
-  margin-bottom: 8px;
+  margin-bottom: 8px
 }
 
 .project-title {
   padding-bottom: 5px;
   font-weight: 500;
-  border-bottom: 1px solid var(--cl-primary);
+  border-bottom: 1px solid var(--cl-primary)
 }
 
 .project-card p {
   margin: 1rem 0;
-  color: var(--dark);
-  font-size: 1.2rem;
   font-weight: 500;
-  line-height: 1.3;
+  line-height: 1.3
 }
 
 .section4 {
   width: 100%;
   height: 100%;
-  padding: 2rem 0px;
+  padding: 2rem 0
 }
 
 .quote-section {
-  background-color: #f6f7f8;
+  background-color: var(--cl-light);
   display: flex;
-}
-
-.quote-img {
-  width: 50%;
+  width: 100%;
 }
 
 .quote-section-typed-text {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 4rem 6rem 4rem 2rem;
+  padding: 4rem 6rem 4rem 2rem
 }
 
 .quote-card {
   display: flex;
   flex-direction: column;
-  padding-bottom: 3rem;
+  padding-bottom: 3rem
+}
+
+.headings,
+.testimonial {
+  flex-direction: column;
+  display: flex
 }
 
 .headings {
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  padding-bottom: 0.5rem;
+  padding-bottom: .5rem
 }
 
 .quote-card p {
-  padding-top: 0.5rem;
-  padding-right: 2rem;
+  padding-top: .5rem;
+  padding-right: 2rem
 }
 
 form {
-  /* display: flex;
-  flex-direction: column; */
-  display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px;
   color: var(--cl-text);
   font-size: 1.2rem;
   font-weight: 500;
-  position: relative;
+  position: relative
 }
 
 input,
-textarea,
-select {
+select,
+textarea {
   border: none;
-  padding: 30px 10px;
+  padding: 25px 10px;
   border-radius: 10px;
-  color: var(--cl-text);
-  font-size: 1.1rem;
+  color: var(--cl-gray-dark);
+  font-size: 1.2rem;
   font-weight: 400;
+  letter-spacing: 1px;
+  width: 100%;
+}
+
+input:not(:nth-child(2)) {
+  text-transform: capitalize;
+}
+
+select,
+input::placeholder,
+select::placeholder,
+textarea::placeholder {
+  font-size: 1.2rem;
+  font-weight: lighter;
+  color: var(--cl-text);
 }
 
 input {
-  height: 30px;
+  height: 30px
 }
 
+select,
 textarea {
   border: none;
   padding: 10px;
-  border-radius: 10px;
-}
-
-select {
-  border: none;
-  padding: 10px;
-  border-radius: 10px;
+  border-radius: 10px
 }
 
 option {
   border-color: var(--cl-primary);
-  outline: none;
+  color: var(--cl-gray-dark);
+  outline: 0
 }
 
 #text {
-  grid-column: span 2;
+  grid-column: span 2
 }
 
+.option:focus,
 input:focus,
-textarea:focus,
 select:focus,
-.option:focus {
-  border: none;
-  color: #9B9B9B;
-  background-color: #fff;
-  border-color: #0dcaf0;
+textarea:focus {
   box-shadow: 0 0 0 .1rem var(--cl-primary);
-  outline: none;
+  outline: 0
+}
+
+select:focus {
+  color: var(--cl-gray-dark);
 }
 
 form .submit-btn {
@@ -1099,160 +1051,122 @@ form .submit-btn {
   font-weight: 500;
   position: relative;
   text-align: center;
-  padding: 15px !important;
+  padding: 10px 15px !important;
   border-radius: 100px;
   letter-spacing: 2px;
   width: 150px;
   height: 100%;
-  cursor: pointer;
+  cursor: pointer
 }
 
 .testimonial-section {
   background-color: var(--cl-white);
-  width: 100%;
+  width: 80%;
   height: 100%;
   padding: 4rem auto;
+  margin: 0 auto;
 }
 
 .testimonial {
-  display: flex;
-  flex-direction: column;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
-  color: var(--cl-white);
-  align-items: center;
-  text-align: center;
-  margin: 2rem auto;
+  position: relative;
+  overflow: hidden;
 }
 
 .testimonial-headings {
+
   display: flex;
   flex-direction: column;
-  align-items: center;
-  line-height: 1.5;
+  align-items: center
 }
 
+.form-header h1,
 .testimonial-headings h1 {
   font-size: 2.5rem;
-  color: var(--cl-gray-dark);
+  color: var(--cl-gray-dark)
 }
 
 .testimonial-headings h4 {
   font-size: 1rem;
   font-weight: 500;
-  text-transform: capitalize;
-  color: var(--cl-primary);
-}
-
-.testimonial-carousal {
-  background-color: var(--cl-primary);
-  max-width: 900px;
-  margin: 2rem auto;
-  padding: 40px;
-  padding-left: 110px;
-  border-radius: 8px;
-  position:
-    relative;
-}
-
-.carousal-content {
-  display: flex;
-  align-items: center;
-  gap: 100px;
-}
-
-.carousal-content .img {
-  margin-left: 15px;
-  transform: scale(2.6);
-  border-radius: 8px;
-}
-
-.testimonial-typed-text {
-  text-align: start;
-  font-size: 1.1rem;
-  padding-left: 30px;
+  color: var(--cl-primary)
 }
 
 .testimonial-name {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding-top: 30px;
-  line-height: 0.8;
+  padding-top: 1rem;
 }
 
-.testimonial-name strong {
-  color: var(--cl-gray-dark);
+/* testimonial */
+.testimonial-carousal {
+  display: flex;
+  width: 400%;
+  position: relative;
+  padding: 20px 50px;
+  transition: all .3s;
+}
+
+.carousal-content {
+  flex-basis: 100%;
+  width: 100%;
 }
 
 .carousal-icons {
-  /* position: absolute; */
   display: flex;
-  align-items: center;
 }
 
-.carousal-icons .icon {
+.carousal-icons .fas {
+  font-size: 2rem;
+  color: var(--cl-primary);
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  z-index: 1090;
+  /* transform: translateY(-50%); */
+}
+
+.carousal-icons .fa-angle-left {
+  left: 0;
+}
+
+.carousal-icons .fa-angle-right {
+  right: 0;
+}
+
+.testimonial-typed-text {
+  color: var(--cl-secondary);
+  width: 90%;
+}
+
+.carousel_slide_indicator_box {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--cl-white);
-  color: var(--cl-primary);
-  height: 40px;
-  width: 40px;
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-.carousal-icons .right {
   position: absolute;
-  top: 50%;
-  right: -15px;
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
-}
-
-.carousal-icons .left {
-  position: absolute;
-  top: 50%;
-  left: -15px;
-  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
-}
-
-.carousal-dots {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  position: absolute;
-  bottom: -30px;
   left: 50%;
+  bottom: -5px;
+  transform: translateX(-50%);
 }
 
-.carousal-dots .dot {
-  width: 12px;
+.dot_indicator {
   height: 12px;
-  /* background-color: var(--cl-white); */
-  border: 2px solid var(--cl-primary);
-  border-radius: 50%;
+  width: 12px;
+  background-color: #333;
+  margin: 5px 10px;
+  border-radius: 50px;
   cursor: pointer;
-
 }
 
-.carousal-dots .second {
-  background-color: var(--cl-primary);
+.current_slide {
+  background-color: transparent;
+  height: 14px;
+  width: 14px;
+  border: 2px solid #333;
 }
 
-.nav-link.active {
-  color: var(--cl-primary);
-}
-
-.contact-section {
-  width: 100%;
-  height: 100%;
-  background-color: var(--cl-white);
-  padding: 3rem;
-  padding-left: 0;
-  padding-right: 0;
-  padding-bottom: 0;
+.gmap_canvas,
+.mapouter {
+  height: 500px;
+  width: 600px
 }
 
 .contact-section-content {
@@ -1260,73 +1174,51 @@ form .submit-btn {
   justify-content: space-between;
   background-color: var(--light);
   margin: 3rem 0;
-  gap: 40px;
+  gap: 40px
+}
+
+.contact-form,
+.form-header {
+  flex-direction: column;
+  display: flex
 }
 
 .contact-form {
-  display: flex;
-  flex-direction: column;
-  margin: 2rem 0px 0px 2rem;
-  padding: 2rem 0px 0px 2rem;
+  margin: 2rem 0 0 2rem;
+  padding: 2rem 0 0 2rem
 }
 
 .form-header {
-  display: flex;
-  flex-direction: column;
-  line-height: 1.3;
-}
-
-.form-header h1 {
-  font-size: 2.5rem;
-  color: var(--cl-gray-dark);
-}
-
-.form-header h5 {
-  color: var(--cl-primary);
+  line-height: 1.3
 }
 
 .form-content {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  outline: none;
-}
-
-.form-grp {
-  display: flex;
-  gap: 10px;
+  outline: 0
 }
 
 .contact-form input {
-  padding: 25px 20px;
+  padding: 25px 20px
 }
 
-.contact-form input,
-.contact-form .textarea {
-  /*border: 1px solid var(--cl-text);*/
+.contact-form .textarea,
+.contact-form input {
   border: none;
-  outline: none;
-}
-
-#subject {
-  width: 100%;
+  outline: 0
 }
 
 .mapouter {
   position: relative;
-  text-align: right;
-  height: 500px;
-  width: 600px;
+  text-align: right
 }
 
 .gmap_canvas {
   overflow: hidden;
-  background: none !important;
-  height: 500px;
-  width: 600px;
+  background: 0 0 !important
 }
 
-/* STICKY NAVIGATION */
 .sticky header {
   position: fixed;
   top: 0;
@@ -1335,21 +1227,20 @@ form .submit-btn {
   height: 75px;
   padding-top: 0;
   padding-bottom: 0;
-  background-color: rgba(255, 255, 255, 0.97);
+  background-color: rgba(255, 255, 255, .97);
   z-index: 9998;
-  box-shadow: 0 1.2rem 3.2rem rgb(0, 0, 0, 1);
-  transition: all 1s ease-in-out;
+  box-shadow: 0 1.2rem 3.2rem #000;
+  transition: 1s ease-in-out
 }
 
-/* adding animation to read more text */
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(10px);
+    transform: translateY(10px)
   }
 
   to {
     opacity: 100%;
-    transform: translateY(0);
+    transform: translateY(0)
   }
 }
