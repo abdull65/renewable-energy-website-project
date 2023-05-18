@@ -1110,6 +1110,10 @@ form .submit-btn {
   width: 100%;
 }
 
+.carousal-content img {
+  margin-bottom: 1rem;
+}
+
 .carousal-icons {
   display: flex;
 }
@@ -1135,6 +1139,10 @@ form .submit-btn {
 .testimonial-typed-text {
   color: var(--cl-secondary);
   width: 90%;
+}
+
+.quotemark {
+  font-size: 1.8rem;
 }
 
 .carousel_slide_indicator_box {
