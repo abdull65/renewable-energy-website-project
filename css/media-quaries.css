@@ -366,6 +366,7 @@
 
   .carousal-content img {
     transform: scale(.6);
+    margin: 0;
   }
 
   .testimonial-name {
