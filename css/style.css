@@ -1107,7 +1107,7 @@ form .submit-btn {
 
 .carousal-content {
   flex-basis: 100%;
-  margin-right: 50px;
+  /* margin-right: 50px; */
   padding: 10px 0px 50px 100px;
 }
 
@@ -1120,7 +1120,7 @@ form .submit-btn {
 }
 
 .carousal-icons .fas {
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: var(--cl-primary);
   cursor: pointer;
   position: absolute;
@@ -1130,11 +1130,15 @@ form .submit-btn {
 }
 
 .carousal-icons .fa-angle-left {
-  left: 0;
+  left: 3px;
 }
 
 .carousal-icons .fa-angle-right {
-  right: 0;
+  right: 3px;
+}
+
+.carousal-icons .fas:active {
+  transform: scale(1.2);
 }
 
 .testimonial-typed-text {
