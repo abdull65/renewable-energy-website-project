@@ -360,6 +360,10 @@
     width: 100%;
   }
 
+  .carousal-content {
+    padding: 10px 0px 26px 50px;
+  }
+
   .testimonial-name {
     padding-top: 1rem;
   }
