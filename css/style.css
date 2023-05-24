@@ -1101,13 +1101,14 @@ form .submit-btn {
   display: flex;
   width: 400%;
   position: relative;
-  padding: 20px 50px;
+  overflow: hidden;
   transition: all .3s;
 }
 
 .carousal-content {
   flex-basis: 100%;
-  width: 100%;
+  margin-right: 50px;
+  padding: 10px 0px 50px 100px;
 }
 
 .carousal-content img {

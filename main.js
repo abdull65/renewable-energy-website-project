@@ -46,7 +46,7 @@ const currentSlideBox = document.querySelector(".carousel_slide_indicator_box");
 let sectionIndex = 0;
 prevCarouselBtn.addEventListener("click", () => {
   sectionIndex = sectionIndex > 0 ? sectionIndex - 1 : 0;
-  mainCarouselBox.style.transform = `translate(${sectionIndex * -23.8}%)`;
+  mainCarouselBox.style.transform = `translate(${sectionIndex * -25}%)`;
   document
     .querySelector(".carousel_slide_indicator_box .current_slide")
     .classList.remove("current_slide");
@@ -54,7 +54,7 @@ prevCarouselBtn.addEventListener("click", () => {
 });
 nextCarouselBtn.addEventListener("click", () => {
   sectionIndex = sectionIndex < 3 ? sectionIndex + 1 : 3;
-  mainCarouselBox.style.transform = `translate(${sectionIndex * -23.8}%)`;
+  mainCarouselBox.style.transform = `translate(${sectionIndex * -25}%)`;
   document
     .querySelector(".carousel_slide_indicator_box .current_slide")
     .classList.remove("current_slide");
@@ -63,7 +63,7 @@ nextCarouselBtn.addEventListener("click", () => {
 document.querySelectorAll(".dot_indicator").forEach((currentSlide, ind) => {
   currentSlide.addEventListener("click", () => {
     sectionIndex = ind;
-    mainCarouselBox.style.transform = `translate(${sectionIndex * -23.8}%)`;
+    mainCarouselBox.style.transform = `translate(${sectionIndex * -25}%)`;
     document
       .querySelector(".carousel_slide_indicator_box .current_slide")
       .classList.remove("current_slide");
