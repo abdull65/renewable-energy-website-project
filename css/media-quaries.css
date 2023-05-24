@@ -364,6 +364,10 @@
     padding: 10px 0px 26px 50px;
   }
 
+  .carousal-content img {
+    transform: scale(.8);
+  }
+
   .testimonial-name {
     padding-top: 1rem;
   }
