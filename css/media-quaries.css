@@ -26,6 +26,10 @@
     border-right: 0;
     z-index: 2;
 
+    position: absolute;
+    left: -500px;
+    top: -47%;
+
   }
 
   .top-bar {
@@ -54,7 +58,6 @@
     width: 100%;
     height: 100vh;
     transform: translateX(100%);
-    overflow: hidden;
     z-index: 1;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
@@ -66,13 +69,8 @@
     opacity: 1;
     pointer-events: auto;
     visibility: visible;
+    overflow: hidden;
     transform: translateX(0%);
-  }
-
-  .open_nav .logo {
-    position: absolute;
-    left: 0;
-    top: -47%;
   }
 
   .open_nav .nav_list_box {
@@ -114,6 +112,8 @@
   .menu_bar,
   .close_bar {
     z-index: 1;
+    padding: .5rem 1rem;
+    box-shadow: inset 1px 1px #32c36c, inset -1px -1px #32c36c;
   }
 
   .mobile_bar .fa {
