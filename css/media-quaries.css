@@ -1,6 +1,7 @@
 @media (max-width: 700px) {
   html {
     font-size: 10px;
+    overflow-x: hidden;
   }
 
   body {
@@ -9,7 +10,7 @@
 
   #container {
     padding: 0;
-    overflow: auto;
+    overflow-x: hidden;
   }
 
   /* style the header and navigation bar */
@@ -25,10 +26,6 @@
     padding: 0;
     border-right: 0;
     z-index: 2;
-
-    position: absolute;
-    left: -500px;
-    top: -47%;
 
   }
 
